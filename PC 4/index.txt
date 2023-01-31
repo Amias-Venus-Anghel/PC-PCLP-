@@ -1,0 +1,47 @@
+valgrind --leak-check=full ./tema4 ./input/test_1.in ./output/test_1
+
+2,807,170 bytes in 154 blocks
+384 errors from 68 contexts
+
+2,951,170 bytes in 226 blocks
+984 errors from 97 context
+
+150,950 bytes in 211 blocks  // free ouput unde da segm pt test 3
+981 errors from 94 contexts
+
+6,950 bytes in 139 blocks
+973 errors from 86 contexts
+
+0 bytes in 0 blocks
+All heap blocks were freed -- no leaks are possible
+971 errors from 84 contexts
+
+valgrind --track-origins=yes ./tema4 ./input/test_1.in ./output/test_1
+
+971 errors from 84 contexts
+
+140 errors from 24 contexts
+
+136 errors from 23 contexts
+
+56 errors from 13 contexts
+
+40 errors from 9 contexts
+
+34 errors from 7 contexts
+
+29 errors from 5 contexts
+
+0 errors from 0 contexts
+
+valgrind --track-origins=yes ./tema4 ./input/test_4.in ./output/test_4
+
+still reachable: 150,012 bytes in 107 blocks
+717957 errors from 7 contexts
+
+
+
+
+
+
+
